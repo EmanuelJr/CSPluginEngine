@@ -1,11 +1,11 @@
 # CSPluginEngine
 A plugin system based in C#.
-This system is using [CS-Script](http://cs-script.net).
+This system is using [CS-Script](http://www.csscript.net/).
 
-The script main function needs return any type and function and class need be publics.
+The script main function need return any type. The class and function need be public.
 
-For includes external library use:
-```
+To include external libraries use:
+```csharp
 //dll_include MyLibrary.dll
 using MyLibrary;
 using System;
@@ -14,7 +14,7 @@ using System;
 
 ## Example
 Program.cs
-```
+```csharp
 ...
 static void Main(string[] args)
 {
@@ -26,7 +26,7 @@ static void Main(string[] args)
 
 plugins/example.cs
 
-```
+```csharp
 using System;
 using System.Windows.Forms;
 
@@ -39,4 +39,3 @@ public class Script
     }
 }
 ```
-
